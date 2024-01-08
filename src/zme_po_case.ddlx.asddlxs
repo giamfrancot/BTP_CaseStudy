@@ -1,0 +1,25 @@
+@Metadata.layer: #CORE
+annotate entity zc_po_case with
+{
+  @UI.lineItem: [{ position: 10 ,
+                   importance: #HIGH }]
+  @EndUserText.label: 'Production Order'
+  ProdOrder;
+  @UI.lineItem: [{ position: 20 ,
+               importance: #HIGH }]
+  Material;
+  @UI.lineItem: [{ position: 30 ,
+               importance: #HIGH }]
+  Quantity;
+  @UI.lineItem: [{ position: 40 ,
+               importance: #HIGH }]
+  @EndUserText.label: 'Order start date'
+  StartD;
+  @UI.lineItem: [{ position: 50 ,
+               importance: #HIGH }]
+  @EndUserText.label: 'Order finish date'
+  FinishD;
+  @UI.lineItem: [{ position: 60 ,
+               importance: #HIGH }]
+  Plant;
+}

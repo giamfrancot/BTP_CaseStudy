@@ -1,0 +1,6 @@
+@EndUserText.label: 'Definition Stock'
+define service Zsd_stock_case {
+  expose zc_stock_case;
+  expose zc_po_case;
+  expose zc_sto_case;
+}

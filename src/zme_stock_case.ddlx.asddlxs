@@ -1,0 +1,75 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+ typeName: 'Material',
+ typeNamePlural: 'Materials',
+ title:         { type: #STANDARD,
+                  value: 'Material'},
+ description:   {
+                  type: #STANDARD,
+                  value: 'Name' }
+}
+annotate entity zc_stock_case with
+{
+  @UI.facet: [
+
+               {id: 'Production',
+               label: 'Production Orders',
+               type: #LINEITEM_REFERENCE,
+               targetElement: '_ProductionOrd',
+               position: 30 },
+
+               {id: 'StockTransport',
+               label: 'Stock Transport Order',
+               type: #LINEITEM_REFERENCE,
+               targetElement: '_StockTransport',
+               position: 40 }]
+
+  @UI.fieldGroup: [{ qualifier: 'DetallesLibro' ,
+                     position: 10}]
+
+  @UI.lineItem: [{ position: 10 ,
+                 importance: #HIGH }]
+  @UI.selectionField: [{ position: 10 }]
+  Material;
+  @UI.lineItem: [{ position: 19 ,
+                 importance: #HIGH }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.fieldGroup: [{ qualifier: 'DetallesLibro' ,
+                    position: 20}]
+  Name;
+  @UI.lineItem: [{ position: 20 ,
+                 importance: #HIGH }]
+  @UI.selectionField: [{ position: 30 }]
+  @UI.fieldGroup: [{ qualifier: 'DetallesLibro' ,
+                    position: 30}]
+  Plant;
+  @UI.lineItem: [{ position: 29 ,
+               importance: #HIGH }]
+  @UI.fieldGroup: [{ qualifier: 'DetallesLibro' ,
+                    position: 40}]
+  @EndUserText.label: 'Plant Name'
+  PlantName;
+  @UI.lineItem: [{ position: 30 ,
+                 importance: #HIGH }]
+  Quantity;
+  @UI.lineItem: [{ position: 40 ,
+                 importance: #HIGH }]
+  @EndUserText.label: 'Issued Date'
+  IssuedDate;
+  @UI.lineItem: [{ position: 41 ,
+               importance: #HIGH,
+               value: 'Icon',
+               criticality: 'Icono'}]
+  Icono;
+
+  /* Associations */
+
+  @UI.lineItem: [{ position: 50 ,
+                 importance: #HIGH }]
+  _ProductionOrd;
+
+  @UI.lineItem: [{ position: 60 ,
+                 importance: #HIGH }]
+  _StockTransport;
+}

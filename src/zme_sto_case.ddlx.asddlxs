@@ -1,0 +1,32 @@
+@Metadata.layer: #CORE
+annotate entity zc_sto_case with
+{
+  @UI.lineItem: [{ position: 10 ,
+                   importance: #HIGH }]
+  @EndUserText.label: 'STO number'
+  Sto;
+  @UI.lineItem: [{ position: 20 ,
+               importance: #HIGH }]
+  Material;
+  @UI.lineItem: [{ position: 30 ,
+               importance: #HIGH }]
+  Quantity;
+  @UI.lineItem: [{ position: 40 ,
+               importance: #HIGH }]
+  @EndUserText.label: 'Requirement date'
+  RequirD;
+  @UI.lineItem: [{ position: 50 ,
+               importance: #HIGH }]
+  @EndUserText.label: 'Supplying Plant'
+  SupPlant;
+  @UI.lineItem: [{ position: 60 ,
+               importance: #HIGH }]
+  @EndUserText.label: 'Receiving Plant'
+  RecPlant;
+  @UI.lineItem: [{ position: 70 ,
+             importance: #HIGH,
+             value: 'Icon',
+             criticality: 'Icono'}]
+  Icono;
+
+}
