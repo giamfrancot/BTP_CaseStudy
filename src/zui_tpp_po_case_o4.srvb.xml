@@ -4,9 +4,9 @@
   <asx:values>
    <SRVB>
     <METADATA>
-     <NAME>ZSB_STOCK_CASE</NAME>
+     <NAME>ZUI_TPP_PO_CASE_O4</NAME>
      <TYPE>SRVB/SVB</TYPE>
-     <DESCRIPTION>Binding Stock Case</DESCRIPTION>
+     <DESCRIPTION>##GENERATED ZTPP_PO_CASE</DESCRIPTION>
      <LANGUAGE>EN</LANGUAGE>
      <LINKS>
       <item>
@@ -15,10 +15,10 @@
        <TITLE>Historic versions</TITLE>
       </item>
       <item>
-       <HREF>/sap/bc/adt/businessservices/odatav2/ZSB_STOCK_CASE</HREF>
-       <REL>http://www.sap.com/categories/odatav2</REL>
-       <TYPE>application/vnd.sap.adt.businessservices.odatav2.v2+xml</TYPE>
-       <TITLE>ODATAV2</TITLE>
+       <HREF>/sap/bc/adt/businessservices/odatav4/ZUI_TPP_PO_CASE_O4</HREF>
+       <REL>http://www.sap.com/categories/odatav4</REL>
+       <TYPE>application/vnd.sap.adt.businessservices.odatav4.v1+xml</TYPE>
+       <TITLE>ODATAV4</TITLE>
       </item>
       <item>
        <HREF>/sap/bc/adt/businessservices/testclass</HREF>
@@ -39,7 +39,7 @@
        <TITLE>SemanticVersion</TITLE>
       </item>
       <item>
-       <HREF>./zsb_stock_case</HREF>
+       <HREF>./zui_tpp_po_case_o4</HREF>
        <REL>http://www.sap.com/adt/relations/source</REL>
        <TYPE>text/html</TYPE>
        <TITLE>Landing Page (HTML)</TITLE>
@@ -50,21 +50,21 @@
     </METADATA>
     <CONTENT>
      <BIND_TYPE_IMPL>
-      <NAME>ZSB_STOCK_CASE</NAME>
+      <NAME>ZUI_TPP_PO_CASE_O4</NAME>
      </BIND_TYPE_IMPL>
      <BIND_TYPE>ODATA</BIND_TYPE>
-     <BIND_TYPE_VERSION>V2</BIND_TYPE_VERSION>
+     <BIND_TYPE_VERSION>V4</BIND_TYPE_VERSION>
      <SERVICES>
       <item>
-       <SERVICE_NAME>ZSB_STOCK_CASE</SERVICE_NAME>
+       <SERVICE_NAME>ZUI_TPP_PO_CASE_O4</SERVICE_NAME>
        <SERVICE_CONTENT>
         <item>
          <SERVICE_VERSION>0001</SERVICE_VERSION>
          <RELEASE_STATE>NOT_RELEASED</RELEASE_STATE>
          <SRVD_REF>
-          <URI>/sap/bc/adt/ddic/srvd/sources/zsd_stock_case</URI>
+          <URI>/sap/bc/adt/ddic/srvd/sources/zui_tpp_po_case_o4</URI>
           <TYPE>SRVD/SRV</TYPE>
-          <NAME>ZSD_STOCK_CASE</NAME>
+          <NAME>ZUI_TPP_PO_CASE_O4</NAME>
          </SRVD_REF>
          <BIND_TYPE_DATA>
           <CONTENT>

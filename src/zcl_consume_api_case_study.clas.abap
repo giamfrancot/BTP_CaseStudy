@@ -57,7 +57,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_consume_api_case_study IMPLEMENTATION.
+CLASS ZCL_CONSUME_API_CASE_STUDY IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     TRY.
@@ -74,11 +75,13 @@ CLASS zcl_consume_api_case_study IMPLEMENTATION.
     ENDTRY.
   ENDMETHOD.
 
+
   METHOD create_client.
     "Connect with an API
     DATA(dest) = cl_http_destination_provider=>create_by_url( url ).
     result = cl_web_http_client_manager=>create_by_http_destination( dest ).
   ENDMETHOD.
+
 
   METHOD read_posts.
     " Get JSON
@@ -93,11 +96,9 @@ CLASS zcl_consume_api_case_study IMPLEMENTATION.
       )->write_to( REF #( result ) ).
   ENDMETHOD.
 
+
   METHOD fill_tables.
     DATA: lt_result_sto TYPE gt_sto.
-
-
-
 
     "Retrieve STO data to check uncompleted STO
     SELECT FROM ztpp_sto_case
@@ -170,5 +171,4 @@ CLASS zcl_consume_api_case_study IMPLEMENTATION.
     MODIFY ztpp_sto_case FROM TABLE @lt_result_sto.
     MODIFY ztpp_stock_case FROM TABLE @lt_stock.
   ENDMETHOD.
-
 ENDCLASS.

@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_calculated_stock IMPLEMENTATION.
+CLASS ZCL_CALCULATED_STOCK IMPLEMENTATION.
+
 
   METHOD if_sadl_exit_calc_element_read~get_calculation_info.
 
@@ -54,5 +55,4 @@ CLASS zcl_calculated_stock IMPLEMENTATION.
     ENDLOOP.
     ct_calculated_data = CORRESPONDING #( lt_stock_data ).
   ENDMETHOD.
-
 ENDCLASS.

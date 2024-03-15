@@ -1,0 +1,84 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'POrder',
+    typeNamePlural: 'POrders'
+  }
+}
+annotate view ZC_TPP_PO_CASE with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'POrder',
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #MEDIUM,
+    label: 'ProdOrder'
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'ProdOrder'
+  } ]
+  
+  ProdOrder;
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #MEDIUM,
+    label: 'Material'
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Material'
+  } ]
+  Material;
+
+  @UI.lineItem: [ {
+    position: 30 ,
+    importance: #MEDIUM,
+    label: 'Quantity'
+  } ]
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Quantity'
+  } ]
+  Quantity;
+
+  @UI.lineItem: [ {
+    position: 40 ,
+    importance: #MEDIUM,
+    label: 'StartD'
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'StartD'
+  } ]
+  StartD;
+
+  @UI.lineItem: [ {
+    position: 50 ,
+    importance: #MEDIUM,
+    label: 'FinishD'
+  } ]
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'FinishD'
+  } ]
+  FinishD;
+
+  @UI.lineItem: [ {
+    position: 60 ,
+    importance: #MEDIUM,
+    label: 'Plant'
+  } ]
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Plant'
+  } ]
+  Plant;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

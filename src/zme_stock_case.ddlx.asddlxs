@@ -9,7 +9,7 @@
                   type: #STANDARD,
                   value: 'Name' }
 }
-annotate entity zc_stock_case with
+annotate view zc_stock_case with
 {
   @UI.facet: [
 
@@ -29,12 +29,13 @@ annotate entity zc_stock_case with
                      position: 10}]
 
   @UI.lineItem: [{ position: 10 ,
-                 importance: #HIGH }]
+                 importance: #HIGH
+                 }]
   @UI.selectionField: [{ position: 10 }]
   Material;
   @UI.lineItem: [{ position: 19 ,
                  importance: #HIGH }]
-  @UI.selectionField: [{ position: 20 }]
+  //  @UI.selectionField: [{ position: 20 }]
   @UI.fieldGroup: [{ qualifier: 'DetallesLibro' ,
                     position: 20}]
   Name;
@@ -57,11 +58,11 @@ annotate entity zc_stock_case with
                  importance: #HIGH }]
   @EndUserText.label: 'Issued Date'
   IssuedDate;
-  @UI.lineItem: [{ position: 41 ,
-               importance: #HIGH,
-               value: 'Icon',
-               criticality: 'Icono'}]
-  Icono;
+  //  @UI.lineItem: [{ position: 41 ,
+  //               importance: #HIGH,
+  //               value: 'Icon',
+  //               criticality: 'Icono'}]
+  //  Icono;
 
   /* Associations */
 

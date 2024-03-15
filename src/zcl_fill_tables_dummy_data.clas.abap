@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_fill_tables_dummy_data IMPLEMENTATION.
+CLASS ZCL_FILL_TABLES_DUMMY_DATA IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     "Logic to insert Dummy DATA
 
@@ -125,5 +127,4 @@ CLASS zcl_fill_tables_dummy_data IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

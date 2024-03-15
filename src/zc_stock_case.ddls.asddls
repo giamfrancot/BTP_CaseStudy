@@ -8,7 +8,7 @@
     dataClass: #MIXED
 }
 @Metadata.allowExtensions: true
-define view entity zc_stock_case
+define root view entity zc_stock_case
   as select from ztpp_stock_case
   association [1..*] to zc_po_case  as _ProductionOrd  on  _ProductionOrd.Material = $projection.Material
                                                        and _ProductionOrd.Plant    = $projection.Plant
@@ -21,11 +21,11 @@ define view entity zc_stock_case
       plantname   as PlantName,
       quantity    as Quantity,
       issued_date as IssuedDate,
-      ' '         as Icon,
-      @ObjectModel: {
-      virtualElementCalculatedBy: 'ABAP:ZCL_CALCULATED_STOCK'
-      }
-      ' '         as Icono,
+//      ' '         as Icon,
+//      @ObjectModel: {
+//      virtualElementCalculatedBy: 'ABAP:ZCL_CALCULATED_STOCK'
+//      }
+//      ' '         as Icono,
       _ProductionOrd,
       _StockTransport
 }

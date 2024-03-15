@@ -1,0 +1,13 @@
+managed implementation in class zbp_c_stock_case unique;
+strict ( 2 );
+
+define behavior for zc_stock_case alias Stock
+persistent table ztpp_stock_case
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

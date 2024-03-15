@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_TPP_PO_CASE'
+define service ZUI_TPP_PO_CASE_O4 {
+  expose ZC_TPP_PO_CASE as POrder;
+}
